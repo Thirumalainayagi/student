@@ -4,9 +4,7 @@ class StudentsController < ApplicationController
   def index
     @students = Student.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @students }
+    
     end
   end
 
@@ -15,10 +13,7 @@ class StudentsController < ApplicationController
   def show
     @student = Student.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @student }
-    end
+    #get add stucevjk
   end
 
   # GET /students/new
@@ -26,10 +21,7 @@ class StudentsController < ApplicationController
   def new
     @student = Student.new
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @student }
-    end
+    
   end
 
   # GET /students/1/edit
